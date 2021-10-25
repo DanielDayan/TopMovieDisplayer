@@ -1,4 +1,4 @@
-package com.example.topmoviedisplayer.viewmodels
+package com.example.topmoviedisplayer.controllers
 
 import android.annotation.SuppressLint
 import androidx.lifecycle.ViewModel
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
  isLoading - true of view model loading more item to recycler view
  page - current page to get from TMDB
  */
-class MovieViewModel : ViewModel() {
+class MovieController : ViewModel() {
     private val model: MovieModel = MovieModel()
     private var isLoading = false
     private var page: Int = 1
